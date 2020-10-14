@@ -1,0 +1,18 @@
+.promo {
+  background-image: url("../../img/promo-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 906px;
+}
+
+.promo h1 {
+  margin: 0 auto;
+  padding-top: 548px;
+  font-size: 24px;
+  line-height: 28.8px;
+  font-weight: 700;
+  color: $white;
+  width: 30%;
+  text-align: center;
+}

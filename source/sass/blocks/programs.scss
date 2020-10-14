@@ -1,0 +1,56 @@
+.programs {
+  padding-left: 60px;
+  background-image: url("../../img/sketch_Bg.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.programs__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.programs__wrapper ul {
+  flex: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.programs__link {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 400;
+  color: inherit;
+
+  &--active {
+    color: $white;
+  }
+}
+
+.programs__description {
+  flex: 4;
+}
+
+.programs__description h3 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34.14px;
+  color: $blue-accent;
+}
+
+.programs__description p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25.5px;
+}
+
+.programs__item {
+  &--active {
+    background-image: url("../../img/Rectangle.png");
+    background-repeat: no-repeat;
+  }
+}

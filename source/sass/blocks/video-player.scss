@@ -1,0 +1,27 @@
+.video-player {
+  position: relative;
+  background-image: url("../../img/watercolor_Bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.video-player__button {
+  position: absolute;
+  top: 54%;
+  left: 47.4%;
+  display: block;
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  background-color: $white;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 61%;
+    transform: translateX(-50%);
+    border: 9px solid transparent;
+    border-left: 12px solid $blue-accent;
+  }
+}
