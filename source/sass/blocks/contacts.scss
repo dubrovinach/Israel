@@ -1,0 +1,28 @@
+.contacts {
+  padding-top: 67px;
+  padding-bottom: 72px;
+}
+
+.contacts__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts__desc {
+  width: 30%;
+}
+
+.contacts__desc h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25.5px;
+}
+
+.contacts__desc p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+}

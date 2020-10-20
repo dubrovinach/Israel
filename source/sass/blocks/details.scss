@@ -1,0 +1,33 @@
+.details__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.details__location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+}
+
+.details__location p {
+  padding-right: 16px;
+  margin: 0;
+}
+
+.details__location a {
+  text-decoration: none;
+  font-weight: 500;
+  color: $text-black;
+  border-bottom: 1px dashed $blue-accent;
+  text-transform: uppercase;
+}
+
+.details__wrapper p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 28.9px;
+}

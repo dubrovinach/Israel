@@ -37,12 +37,17 @@
 <use xlink:href="#image0" transform="scale(0.03125 0.0344828)"/>
 </pattern>
 <image id="image0" width="32" height="29" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAdCAYAAADLnm6HAAAC60lEQVRIicXXTYiVVRgH8N84Y2gp+dFAQ4KjkWKKUk3Ql5i4UEIKQmkR7hQlEERduXAnhNgqqE2LiL4nUBduFD8WKqgF1kQZCDFqDDqN32aY423xnON95+3eOzN4x/5wOJfnfDz/85zn/J/30hx04Tv04QdsSfYZ+By9+BHbm+RvCF7CPVRK7Qj+qGNvbZbzFpxJG3+JhXgLAwWHe7AIKwqE1jaLwOy04ZWSfSZ+whcl+6o0vzsb2h6QwGDqW0r2XhGNMqam/s4D+h2C0+JU3w4zb6Hq1bzdTAILxIkq+KrBnOtpzt5mOs94DXeTg29KYy/gVhrbNxbOM15WjcTuZJuDv4zhyct4EX8nhweEMBUJPRR04ZKqDnzdaHL5+TQLT+JNoQ/dw8z9f5Ej8KgoHFkgxov7u/kwSKwQylUuGhfwRoHQrNQeb6bzFpzF07gh3nK2T8FVHMQSPJHG7uB3nMAp/Iqfhcrl9aNCvzjxAnHS8ZgndL4YkSu47L+Ryq0fR/EJ3hkNgVwinyrY5iXbTWzEs6KGt4oMX4J1+Azf43YNQltHSuBCWjC3YFuebIdHuEebKMHzsb5AohZmoKO4sBZy2ewfxnE7rom86C3seU9cYYe40i5RL1bimTSvG2vqEZiS+j8bON+GHYnAQLJ1YGL6XRHJOa207ioewWr0jKuzeV40UGc8b1QRz3J2ahML461pn+s4hA/E9+NUbEpzltaLQH5yvzQg8JGo/+0iMSeLkw2KpLwsakK/KFAZy7A5/T5I7ST8NNn2Y3EDEiPFBGxAj2qCHkiEaxLYa+iTOor3RH0fDV7BLlWtqYhkzRHQhpwHfYWF7anfjefxamqE8h3Hb0JDLooQj8N0dApRWyryIuMkPhZ/VIYoZla3d/GcCPnFZMuvYY2IyjX1lbBWO4cPhXDVRIsQm9drjN0Sz+pGwTZJfPXMSafsFFn9GP4RL+O8UMceHFNfkO4T6MROEa5BcS19eF/c/ZjiXw4X3+LTbxDoAAAAAElFTkSuQmCC"/>
-</defs><symbol id="business" viewBox="0 0 36 36">
+</defs><symbol id="Vector" viewBox="0 0 2 193">
+<path opacity="0.2" d="M1 0.5V96.75V193" stroke="#484848" stroke-dasharray="4 4"/>
+</symbol><symbol id="business" viewBox="0 0 36 36">
 <rect x="2" y="5" width="32" height="25" fill="url(#pattern0)"/>
 
 </symbol><symbol id="culture" viewBox="0 0 36 36">
 <rect x="4" y="2" width="28" height="33" fill="url(#pattern0)"/>
 
+</symbol><symbol id="instagram" viewBox="0 0 24 24">
+<path d="M12 8.3999C10.0149 8.3999 8.40002 10.0148 8.40002 11.9999C8.40002 13.985 10.0149 15.5999 12 15.5999C13.9852 15.5999 15.6 13.985 15.6 11.9999C15.6 10.0148 13.9852 8.3999 12 8.3999Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.40002 17.6106V6.3892C2.40002 4.18596 4.18608 2.3999 6.38932 2.3999H17.6107C19.814 2.3999 21.6 4.18596 21.6 6.3892V17.6106C21.6 19.8138 19.814 21.5999 17.6107 21.5999H6.38932C4.18608 21.5999 2.40002 19.8138 2.40002 17.6106ZM6.55995 9.96611C4.926 14.7018 9.29815 19.0739 14.0338 17.44C15.63 16.8894 16.8896 15.6299 17.4401 14.0338C19.074 9.29803 14.7019 4.92588 9.96612 6.55982C8.37002 7.11037 7.11049 8.37002 6.55995 9.96611ZM18 6.59993C18.6628 6.59993 19.2 6.06268 19.2 5.39993C19.2 4.73719 18.6628 4.19993 18 4.19993C17.3373 4.19993 16.8 4.73719 16.8 5.39993C16.8 6.06268 17.3373 6.59993 18 6.59993Z" fill="white"/>
 </symbol><symbol id="logo"><path fill="url(#pattern0)" d="M0 0h137v48H0z"/></symbol><symbol id="religion" viewBox="0 0 36 36">
 <path d="M6 5H29V30H6V5Z" fill="url(#pattern0)"/>
 
