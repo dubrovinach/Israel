@@ -1,0 +1,66 @@
+.information {
+  padding-bottom: 160px;
+  background: url("../../img/watercolor_Bg-inform.png") no-repeat,
+    url("../../img/stamp-desktop.png") no-repeat top center;
+}
+
+.information__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.information__desc {
+  margin-left: auto;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25.5px;
+}
+
+.information h3 {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 28.9px;
+}
+
+.information__list {
+  background-image: url("../../img/icons/Vector.svg");
+  background-repeat: no-repeat;
+  background-position: top 65px left 0;
+  padding: 0;
+  margin-left: auto;
+  list-style: none;
+}
+
+.information__list li {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding-bottom: 48px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 41px;
+    left: -14px;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    background-color: $white;
+  }
+}
+
+.information__list li p {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.information__list li span {
+  color: $yellow-accent;
+  padding-right: 24px;
+  z-index: 1;
+}

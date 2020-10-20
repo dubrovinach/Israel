@@ -1,0 +1,49 @@
+.questions {
+  padding-top: 136px;
+  background-image: url("../../img/watercolor_Bg-questions-desktop.png"), url("../../img/bag.png");
+  background-repeat: no-repeat;
+}
+
+.questions__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.questions ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 92%;
+}
+
+.questions ul li {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgba(72, 72, 72, 0.2);
+}
+
+.questions ul li a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: $text-black;
+}
+
+.questions ul li a span {
+  padding-right: 20px;
+}
+
+.questions ul li a svg {
+  margin-left: auto;
+}
+
+.questions ul li p {
+  font-size: 17px;
+  line-height: 25.5px;
+  font-weight: 400;
+  margin: 0;
+  width: 68%;
+}

@@ -10,9 +10,10 @@
   top: 54%;
   left: 47.4%;
   display: block;
+  border: none;
   border-radius: 50%;
-  width: 96px;
-  height: 96px;
+  width: 66px;
+  height: 66px;
   background-color: $white;
 
   &::after {
@@ -23,5 +24,17 @@
     transform: translateX(-50%);
     border: 9px solid transparent;
     border-left: 12px solid $blue-accent;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.32);
   }
 }

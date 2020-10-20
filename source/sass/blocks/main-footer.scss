@@ -1,0 +1,14 @@
+.main-footer {
+  border-top: 1px solid rgba(71, 71, 71, 0.2);
+}
+
+.main-footer__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-footer__container p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
