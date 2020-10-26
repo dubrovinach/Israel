@@ -1,20 +1,30 @@
 .programs {
-  padding-left: 60px;
+  padding-top: 40px;
   background-image: url("../../img/sketch_Bg.png");
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top -9px right;
+}
+
+.programs h2 {
+  padding-left: 104px;
 }
 
 .programs__wrapper {
+  padding-top: 70px;
+  padding-left: 104px;
   display: flex;
   flex-direction: row;
 }
 
 .programs__wrapper ul {
-  flex: 1;
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 28%;
+}
+
+.programs__wrapper ul li {
+  padding-bottom: 31px;
 }
 
 .programs__link {
@@ -29,16 +39,23 @@
   }
 }
 
+.programs__link span {
+  padding-left: 32px;
+}
+
 .programs__description {
-  flex: 4;
+  width: 53%;
+  padding-top: 12px;
 }
 
 .programs__description h3 {
   margin: 0;
+  font-family: $montserrat;
   font-size: 28px;
   font-weight: 700;
-  line-height: 34.14px;
+  line-height: 34.13px;
   color: $blue-accent;
+  padding-bottom: 24px;
 }
 
 .programs__description p {
@@ -46,6 +63,7 @@
   font-size: 15px;
   font-weight: 400;
   line-height: 25.5px;
+  padding-bottom: 17px;
 }
 
 .programs__item {

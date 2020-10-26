@@ -5,6 +5,8 @@
 }
 
 .details__location {
+  padding-top: 39px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -23,10 +25,12 @@
   font-weight: 500;
   color: $text-black;
   border-bottom: 1px dashed $blue-accent;
-  text-transform: uppercase;
 }
 
-.details__wrapper p {
+.details__desc {
+  margin: 0;
+  padding-top: 24px;
+  width: 92%;
   font-size: 17px;
   font-weight: 400;
   line-height: 28.9px;

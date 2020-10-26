@@ -1,19 +1,30 @@
 .questions {
-  padding-top: 136px;
-  background-image: url("../../img/watercolor_Bg-questions-desktop.png"), url("../../img/bag.png");
+  padding-top: 134px;
+  padding-bottom: 126px;
+  background: url("../../img/watercolor_Bg-questions-desktop.png") top 55px center, url("../../img/bag.png") bottom 65px left;
   background-repeat: no-repeat;
-}
-
-.questions__container {
+  position: relative;
   display: flex;
   flex-direction: row;
+}
+
+.questions__container img {
+  position: absolute;
+  right: -106px;
+  top: 0;
+}
+
+.questions__wrapper {
+  width: 45%;
+  margin-left: 112px;
 }
 
 .questions ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 92%;
+  padding-top: 9px;
+  width: 90.5%;
 }
 
 .questions ul li {
@@ -23,8 +34,8 @@
 }
 
 .questions ul li a {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 23px;
+  padding-bottom: 24px;
   text-decoration: none;
   display: flex;
   flex-direction: row;
@@ -33,17 +44,31 @@
 }
 
 .questions ul li a span {
-  padding-right: 20px;
+  padding-right: 16px;
+  font-size: 28px;
+  line-height: 47.6px;
+  font-weight: 700;
+  color: rgba(255, 195, 65, 1);
 }
 
 .questions ul li a svg {
   margin-left: auto;
 }
 
-.questions ul li p {
+.questions ul li h4 {
+  padding-top: 10px;
   font-size: 17px;
   line-height: 25.5px;
   font-weight: 400;
   margin: 0;
   width: 68%;
+}
+
+.questions ul li p {
+  padding-bottom: 27px;
+  width: 93%;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+  margin: 0;
 }

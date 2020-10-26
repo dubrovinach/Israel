@@ -1,15 +1,35 @@
 .blogs {
   background-image: url("../../img/cynthia-magana-138943-unsplash-desktop.png");
   background-repeat: no-repeat;
-  padding-top: 120px;
-  padding-bottom: 196px;
-  padding-left: 61%;
-  padding-right: 5%;
+  background-position: top 129px center;
+  padding-top: 252px;
+  padding-bottom: 199px;
+  padding-left: 58.4%;
+  padding-right: 13%;
 }
 
 .blogs p {
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 48px;
   font-size: 17px;
   font-weight: 400;
   line-height: 28.9px;
   color: $white;
+}
+
+.blogs__button {
+  display: flex;
+  align-items: center;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-right: 37px;
+}
+
+.blogs__button svg {
+  fill: $white;
+}
+
+.blogs__button span {
+  padding-left: 13px;
 }

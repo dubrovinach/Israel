@@ -1,23 +1,55 @@
 .information {
-  padding-bottom: 160px;
-  background: url("../../img/watercolor_Bg-inform.png") no-repeat,
-    url("../../img/stamp-desktop.png") no-repeat top center;
-}
-
-.information__container {
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  padding-bottom: 156px;
+  background: url("../../img/watercolor_Bg-inform.png") no-repeat top -170px left 0,
+    url("../../img/stamp-desktop.png") no-repeat top 240px right 0px;
+}
+
+.information__summary {
+  width: 50%;
+  padding-left: 7.6%;
+  padding-top: 32px;
+}
+
+.information__img {
+  padding-left: 14px;
+}
+
+.information__note {
+  display: flex;
+  margin: 0;
+  padding-top: 48px;
+  width: 94%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+
+  &::before {
+    content: "";
+    padding-right: 12px;
+    display: block;
+    border-left: 4px solid rgba(255, 195, 65, 1);
+    height: 42px;
+    width: 4px;
+  }
 }
 
 .information__desc {
-  margin-left: auto;
+  margin: 0;
+  padding-top: 22px;
+  padding-bottom: 34px;
+  width: 87%;
   font-size: 15px;
   font-weight: 400;
   line-height: 25.5px;
 }
 
 .information h3 {
+  margin: 0;
+  padding-bottom: 31px;
+  width: 80%;
   font-size: 17px;
   font-weight: 500;
   line-height: 28.9px;
@@ -25,23 +57,23 @@
 
 .information__list {
   background-image: url("../../img/icons/Vector.svg");
-  background-repeat: no-repeat;
-  background-position: top 65px left 0;
+  background-repeat: repeat-y;
+  background-position: top 27px left 1px;
   padding: 0;
-  margin-left: auto;
+  margin: 0;
   list-style: none;
 }
 
 .information__list li {
   display: flex;
   flex-direction: row;
+  align-items: center;
   position: relative;
-  padding-bottom: 48px;
+  padding-bottom: 55px;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: 41px;
     left: -14px;
     display: block;
     width: 36px;
@@ -50,10 +82,23 @@
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
     background-color: $white;
   }
+
+  &:nth-child(2) {
+    padding-bottom: 45px;
+  }
+
+  &:nth-child(3) {
+    padding-bottom: 39px;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
 }
 
 .information__list li p {
   margin: 0;
+  width: 74%;
   font-size: 15px;
   font-weight: 400;
   line-height: 21px;
@@ -61,6 +106,6 @@
 
 .information__list li span {
   color: $yellow-accent;
-  padding-right: 24px;
+  padding-right: 37px;
   z-index: 1;
 }

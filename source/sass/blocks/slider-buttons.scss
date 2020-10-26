@@ -1,0 +1,13 @@
+.slider__button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  &--left {
+    padding-right: 6px;
+  }
+}
+
+.slider__button svg {
+  fill: $text-black;
+}

@@ -1,14 +1,39 @@
+.reviews {
+  padding-bottom: 103px;
+  background-image: url("../../img/sketch-reviews.png");
+  background-repeat: no-repeat;
+  background-position: top 56px right -3px;
+}
+
 .reviews__photo {
   flex-shrink: 0;
 }
 
+.reviews__img {
+  padding-top: 56px;
+  margin-left: -8px;
+}
+
 .reviews__container {
+  position: relative;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+.reviews__list {
+  width: 65.6%;
+}
+
+.reviews__list h2 {
+  width: 30%;
+  padding-left: 85px;
 }
 
 .reviews__list blockquote {
   margin: 0;
+  padding-top: 48px;
+  width: 89%;
 }
 
 .reviews__list blockquote cite {
@@ -19,6 +44,8 @@
 }
 
 .reviews__program {
+  padding-top: 8px;
+  padding-bottom: 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -36,7 +63,7 @@
   padding-right: 8px;
 }
 
-.reviews__list blockquote p {
+.reviews__desc {
   font-size: 17px;
   line-height: 28.9px;
   font-weight: 400;
@@ -50,6 +77,7 @@
 }
 
 .reviews__wrapper {
+  padding-top: 52px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

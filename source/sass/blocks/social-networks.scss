@@ -1,0 +1,23 @@
+.social-networks {
+  padding-right: 77px;
+  padding-top: 5px;
+}
+
+.social-networks svg {
+  fill: rgba(72, 72, 72, 0.5);
+}
+
+.social-networks ul {
+  width: 102px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-networks a {
+  text-decoration: none;
+}

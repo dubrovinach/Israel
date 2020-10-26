@@ -1,14 +1,13 @@
 .promo {
-  background-image: url("../../img/promo-desktop.png");
+  background: url("../../img/scroll-down.png") top 627px center,
+    url("../../img/promo-desktop.png") top center;
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  min-height: 906px;
+  min-height: 896px;
 }
 
 .promo h1 {
   margin: 0 auto;
-  padding-top: 548px;
+  padding-top: 540px;
   font-size: 24px;
   line-height: 28.8px;
   font-weight: 700;

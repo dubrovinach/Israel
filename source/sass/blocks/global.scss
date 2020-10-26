@@ -11,22 +11,23 @@
 .global-input {
   border: 2px solid #e3e3e3;
   border-radius: 80px;
-  text-transform: uppercase;
-  padding-top: 19px;
+  padding-top: 15px;
   padding-bottom: 19px;
-  padding-left: 40px;
-  padding-right: 20px;
-  width: 250px;
+  padding-left: 39px;
+  padding-right: 65px;
+  width: 315px;
+  font-size: 17px;
+  line-height: 20.4px;
+  font-weight: 500;
 }
 
 .global-button {
   border: none;
   border-radius: 80px;
-  padding-top: 20px;
+  padding-top: 17px;
   padding-bottom: 20px;
   padding-left: 40px;
-  padding-right: 40px;
-  text-transform: uppercase;
+  padding-right: 34px;
   font-size: 17px;
   font-weight: 500;
   line-height: 20.4px;

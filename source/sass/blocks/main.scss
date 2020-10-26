@@ -9,6 +9,11 @@ body {
   color: $text-black;
 }
 
+.main-container {
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1150px;

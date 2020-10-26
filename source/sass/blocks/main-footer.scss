@@ -1,14 +1,23 @@
 .main-footer {
   border-top: 1px solid rgba(71, 71, 71, 0.2);
+  min-height: 77px;
 }
 
 .main-footer__container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 77px;
 }
 
 .main-footer__container p {
+  margin: 0;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.main-footer__networks {
+  padding-right: 12px;
 }
