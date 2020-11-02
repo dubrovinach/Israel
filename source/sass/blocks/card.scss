@@ -1,0 +1,123 @@
+.card ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card ul:nth-child(2) {
+  padding-left: 4px;
+  padding-top: 46px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  flex-wrap: wrap;
+  flex-shrink: 2;
+}
+
+.card ul:first-child {
+  padding-right: 9px;
+  flex-shrink: 0;
+  margin-top: -21px;
+}
+
+.card ul li {
+  position: relative;
+  padding-bottom: 25px;
+  height: max-content;
+}
+
+.card ul li p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-family: $raleway;
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 24.65px;
+  color: $white;
+}
+
+.card__desc {
+  bottom: 62px;
+  left: 38px;
+  position: absolute;
+  width: 81%;
+
+  &--hebrew {
+    left: 24px;
+  }
+
+  &--professions {
+    left: 29px;
+  }
+
+  &--projects {
+    width: 90%;
+    left: 32px;
+  }
+
+  &--leadership {
+    left: 24px;
+  }
+}
+
+.card__item {
+  &--hebrew {
+    width: 32%;
+  }
+
+  &--professions {
+    width: 64%;
+  }
+
+  &--projects {
+    width: 63%;
+  }
+
+  &--leadership {
+    width: 33%;
+  }
+}
+
+
+@media (max-width: $tablet-width) {
+  .card ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 26px;
+    padding: 0;
+
+    &:first-child {
+      margin-top: 26px;
+      padding: 0;
+    }
+
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+
+  .card ul li {
+    padding-bottom: 0;
+  }
+
+  .card__desc {
+    bottom: 27px;
+    left: 29px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .card img {
+    width: 288px;
+    height: 400px;
+  }
+
+  .card ul li p {
+    font-size: 18px;
+    line-height: 21.3px;
+    text-align: center;
+  }
+}

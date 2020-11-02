@@ -2,74 +2,17 @@
   text-align: center;
   background: url("../../img/watercolor_Bg-photos.png") top -43px center, url("../../img/watch.png") bottom 110px right;
   background-repeat: no-repeat;
+  padding-bottom: 38px;
+}
+
+.life-in-Israel h2 {
+  width: 42%;
+  margin: 0 auto;
 }
 
 .life-in-Israel__photos {
   display: flex;
   flex-direction: row;
-}
-
-.card ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.card ul:nth-child(2) {
-  padding-left: 4px;
-  padding-top: 46px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  list-style: none;
-  flex-wrap: wrap;
-  flex-shrink: 2;
-}
-
-.card ul:first-child {
-  padding-right: 9px;
-  flex-shrink: 0;
-  margin-top: -21px;
-}
-
-.card ul li {
-  position: relative;
-  padding-bottom: 25px;
-}
-
-.card ul li p {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-  font-family: $raleway;
-  font-size: 21px;
-  font-weight: 800;
-  line-height: 24.65px;
-  color: $white;
-}
-
-.card__desc {
-  bottom: 62px;
-  left: 38px;
-  position: absolute;
-  width: 81%;
-
-  &--hebrew {
-    left: 24px;
-  }
-
-  &--professions {
-    left: 29px;
-  }
-
-  &--projects {
-    width: 90%;
-    left: 32px;
-  }
-
-  &--leadership {
-    left: 24px;
-  }
 }
 
 .life-in-Israel__desc {
@@ -79,4 +22,34 @@
   font-size: 17px;
   font-weight: 400;
   line-height: 28.9px;
+}
+
+@media (max-width: $tablet-width) {
+  .life-in-Israel {
+    background: none;
+    padding-bottom: 0;
+  }
+
+  .life-in-Israel h2 {
+    width: 46%;
+  }
+
+  .life-in-Israel__desc {
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 25.6px;
+    width: 86%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .life-in-Israel__desc {
+    margin: 0;
+    text-align: left;
+    margin-left: 5%;
+  }
+
+  .life-in-Israel h2 {
+    width: 100%;
+  }
 }

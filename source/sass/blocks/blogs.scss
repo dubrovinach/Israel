@@ -1,11 +1,17 @@
 .blogs {
   background-image: url("../../img/cynthia-magana-138943-unsplash-desktop.png");
   background-repeat: no-repeat;
-  background-position: top 129px center;
-  padding-top: 252px;
+  background-position: top 93px center;
+  background-size: 1366px auto;
+  padding-top: 215px;
   padding-bottom: 199px;
   padding-left: 58.4%;
   padding-right: 13%;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../../img/cynthia-magana-138943-unsplash-desktop-2x.png");
+  }
 }
 
 .blogs p {
@@ -23,7 +29,8 @@
   align-items: center;
   padding-top: 19px;
   padding-bottom: 19px;
-  padding-right: 37px;
+  padding-right: 38px;
+  letter-spacing: 1px;
 }
 
 .blogs__button svg {
@@ -32,4 +39,55 @@
 
 .blogs__button span {
   padding-left: 13px;
+}
+
+@media (max-width: $tablet-width) {
+  .blogs {
+    padding-right: 2%;
+    background-size: 1025px auto;
+  }
+
+  .blogs p {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .blogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    padding-top: 86px;
+    background-image: url("../../img/cynthia-magana-mobile.png");
+    background-position: top 125px center;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/cynthia-magana-mobile-2x.png");
+    }
+  }
+
+  .blogs h2 {
+    font-size: 40px;
+  }
+
+  .blogs p {
+    padding-top: 100px;
+    width: 93%;
+    padding-left: 4%;
+    padding-bottom: 60px;
+  }
+
+  .blogs__button {
+    width: 265px;
+    padding-left: 60px;
+  }
+
+  .blogs__button span {
+    padding-left: 8px;
+  }
 }

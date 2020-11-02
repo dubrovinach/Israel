@@ -2,17 +2,11 @@
   position: absolute;
   width: 100%;
   min-height: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .main-nav__container {
-  position: relative;
-  min-height: 113px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -28,23 +22,21 @@
   margin: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 
   &--left {
-    margin-left: 111px;
     justify-content: flex-start;
   }
 
   &--right {
     justify-content: flex-end;
-    margin-right: 34px;
   }
 }
 
 .main-nav__list li {
-  padding-right: 10px;
+  padding-right: 7px;
   padding-top: 47px;
   padding-bottom: 47px;
-  width: 195px;
 }
 
 .main-nav__list a {
@@ -53,10 +45,53 @@
   line-height: 18px;
   font-weight: 500;
   color: $text-black;
+  font-variant: small-caps;
 }
 
 .main-nav__item {
+
   &--call {
+    letter-spacing: 1px;
     border-bottom: 2px dashed $text-black;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main-nav__container {
+    flex-direction: column;
+    padding-top: 18px;
+    padding-right: 8px;
+  }
+
+  .main-nav__list {
+    padding: 0;
+    padding-bottom: 5px;
+    margin: 0;
+
+    &--left {
+      justify-content: flex-end;
+    }
+  }
+
+  .main-nav__list li {
+    padding: 0;
+    margin: 0;
+    width: auto;
+  }
+
+  .main-nav__list a {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  .main-nav__logo {
+    transform: none;
+    top: 20px;
+    left: 16px;
+  }
+
+  .main-nav__logo img {
+    width: 120px;
+    height: 42px;
   }
 }

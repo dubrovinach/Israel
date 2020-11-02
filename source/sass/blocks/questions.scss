@@ -1,7 +1,7 @@
 .questions {
   padding-top: 134px;
   padding-bottom: 126px;
-  background: url("../../img/watercolor_Bg-questions-desktop.png") top 55px center, url("../../img/bag.png") bottom 65px left;
+  background: url("../../img/watercolor_Bg-questions-desktop.png") top 55px center, url("../../img/bag.png") bottom 25px left;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
@@ -17,6 +17,10 @@
 .questions__wrapper {
   width: 45%;
   margin-left: 112px;
+}
+
+.questions__wrapper h2 {
+  width: 70%;
 }
 
 .questions ul {
@@ -39,12 +43,12 @@
   text-decoration: none;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   color: $text-black;
 }
 
 .questions ul li a span {
-  padding-right: 16px;
+  padding-right: 12px;
   font-size: 28px;
   line-height: 47.6px;
   font-weight: 700;
@@ -53,10 +57,11 @@
 
 .questions ul li a svg {
   margin-left: auto;
+  margin-right: 32px;
 }
 
 .questions ul li h4 {
-  padding-top: 10px;
+  padding-top: 13px;
   font-size: 17px;
   line-height: 25.5px;
   font-weight: 400;
@@ -71,4 +76,71 @@
   line-height: 21px;
   font-weight: 400;
   margin: 0;
+}
+
+@media (max-width: $tablet-width) {
+  .questions {
+    background: none,
+      url("../../img/bag.png") no-repeat bottom 190px left -6px;
+    padding-top: 0;
+    padding-bottom: 82px;
+  }
+
+  .questions ul {
+    margin: 0 auto;
+    padding-top: 0;
+    width: 90%;
+  }
+
+  .questions__img {
+    display: none;
+  }
+
+  .questions__wrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .questions__wrapper h2 {
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .questions ul li h4 {
+    width: 80%;
+    font-size: 16px;
+    line-height: 25.6px;
+    padding-top: 0;
+  }
+
+  .questions ul li p {
+    padding-bottom: 15px;
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .questions ul li a {
+    align-items: baseline;
+    padding-top: 22px;
+    padding-bottom: 16px;
+  }
+
+  .questions ul li a span {
+    padding-right: 11px;
+  }
+
+  .questions ul li a svg {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .questions {
+    padding-top: 82px;
+  }
+
+  .questions__wrapper h2 {
+    width: 100%;
+  }
 }

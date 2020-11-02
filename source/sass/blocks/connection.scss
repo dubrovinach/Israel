@@ -1,13 +1,23 @@
 .connection {
   position: relative;
-  padding-top: 221px;
-  padding-bottom: 259px;
-  background: url("../../img/girl-flag-bg-desktop.png") no-repeat top 10px right 0px,
-    url("../../img/backpack.png") no-repeat top 146px left 0px;
+  background: url("../../img/girl-flag-bg-desktop.png") no-repeat top 20px right 0px,
+    url("../../img/backpack.png") no-repeat top 150px left 0px;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../../img/girl-flag-bg-desktop-2x.png");
+    background-size: 818px auto;
+  }
 }
 
 .connection__container {
   padding-left: 104px;
+  padding-top: 227px;
+  padding-bottom: 259px;
+}
+
+.connection__container h2 {
+  width: 38%;
 }
 
 .connection p {
@@ -20,7 +30,95 @@
   line-height: 28.9px;
 }
 
-.connection__button {
+.connection form {
+  position: relative;
+  width: 53%;
+}
+
+.connection form button {
   position: absolute;
-  left: 473px;
+  left: 259px;
+  padding-right: 56px;
+}
+
+@media (max-width: $tablet-width) {
+  .connection {
+    background: url("../../img/girl-flag-bg-desktop.png") no-repeat top 0px right 0px;
+    background-size: 600px auto;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/girl-flag-bg-desktop-2x.png");
+    }
+  }
+
+  .connection__container {
+    padding-top: 66px;
+    padding-bottom: 80px;
+  }
+
+  .connection__container h2 {
+    width: 43%;
+  }
+
+  .connection p {
+    width: 48%;
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .connection form {
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .connection form input {
+    margin-bottom: 9px;
+  }
+
+  .connection form button {
+    position: static;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .connection {
+    background: url("../../img/girl-flag-bg-mobile.png") no-repeat bottom center;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/girl-flag-bg-mobile-2x.png");
+    }
+  }
+
+  .connection__container {
+    padding-bottom: 310px;
+    background: url("../../img/backpack-mobile.png") no-repeat top 18px left;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+  }
+
+  .connection__container h2 {
+    width: 100%;
+  }
+
+  .connection p {
+    padding-top: 22px;
+    padding-bottom: 26px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .connection form button {
+    position: static;
+    width: 264px;
+  }
 }
