@@ -1,0 +1,27 @@
+.slider {
+  display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .slider {
+    display: block;
+  }
+
+  .slider__toggle {
+    width: 6px;
+    height: 6px;
+    margin: 0 2px;
+    padding: 0;
+    background-color: $text-black;
+    opacity: 0.2;
+    border-radius: 50%;
+    border: 0;
+
+    &--active {
+      width: 8px;
+      height: 8px;
+      background: linear-gradient(108.42deg, #FFC341 20.46%, #FFD701 65.31%);
+      opacity: 1;
+    }
+  }
+}

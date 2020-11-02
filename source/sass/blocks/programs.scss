@@ -3,10 +3,17 @@
   background-image: url("../../img/sketch_Bg.png");
   background-repeat: no-repeat;
   background-position: top -9px right;
+  background-size: 680px 426px;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../../img/sketch_Bg-2x.png");
+  }
 }
 
 .programs h2 {
   padding-left: 104px;
+  width: 35%;
 }
 
 .programs__wrapper {
@@ -17,30 +24,45 @@
 }
 
 .programs__wrapper ul {
+  width: 27.6%;
   list-style: none;
   margin: 0;
   padding: 0;
-  width: 28%;
 }
 
 .programs__wrapper ul li {
-  padding-bottom: 31px;
+  min-height: 70px;
 }
 
 .programs__link {
-  text-decoration: none;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 15px;
   line-height: 18px;
   font-weight: 400;
   color: inherit;
+  min-height: inherit;
 
   &--active {
     color: $white;
+    background-image: url("../../img/Rectangle.png");
+    background-repeat: no-repeat;
+  }
+
+  &:hover:not(.programs__link--active) {
+    fill: #FFC341;
+    color: #FFC341;
   }
 }
 
+.programs__link--active svg {
+  fill: $white;
+}
+
 .programs__link span {
-  padding-left: 32px;
+  padding-left: 16px;
 }
 
 .programs__description {
@@ -50,6 +72,7 @@
 
 .programs__description h3 {
   margin: 0;
+  width: 50%;
   font-family: $montserrat;
   font-size: 28px;
   font-weight: 700;
@@ -66,9 +89,120 @@
   padding-bottom: 17px;
 }
 
-.programs__item {
-  &--active {
-    background-image: url("../../img/Rectangle.png");
+.programs__svg--study {
+  transform: scale(-1, 1);
+}
+
+@media (max-width: $tablet-width) {
+  .programs__wrapper ul {
+    width: 40%;
+  }
+
+  .programs h2 {
+    width: 50%;
+  }
+
+  .programs__description {
+    width: 57%;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .programs {
+    padding-top: 0;
+    background-image: url("../../img/sketch_Bg-mobile.png");
     background-repeat: no-repeat;
+    background-position: top 118px right -6px;
+    background-size: 320px auto;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/sketch_Bg-mobile-2x.png");
+    }
+  }
+
+  .programs__wrapper {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .programs h2 {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .programs__wrapper ul {
+    width: max-content;
+    min-height: 50px;
+    display: flex;
+    margin-top: 17px;
+    margin-left: 2px;
+    margin-bottom: 17px;
+  }
+
+  .programs__wrapper ul li {
+    padding: 0;
+    padding-right: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 50px;
+  }
+
+  .programs__link {
+    padding-left: 0;
+    min-height: inherit;
+
+    &--active {
+      width: 183px;
+      padding-left: 10px;
+      background-image: url("../../img/Rectangle-mobile.png");
+      background-repeat: no-repeat;
+    }
+
+    &--general svg {
+      display: none;
+    }
+  }
+
+  .programs__link img {
+    &:not(.programs__img--active) {
+      opacity: 0.5;
+      width: 27px;
+      height: auto;
+    }
+  }
+
+  .programs__link span {
+    padding-left: 7px;
+  }
+
+  .programs__link svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .programs__link--active span {
+    padding-left: 11px;
+    text-transform: uppercase;
+  }
+
+  .programs__description {
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  .programs__description h3 {
+    padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .programs__description p {
+    padding-bottom: 12px;
+    font-size: 14px;
+    line-height: 22.4px;
+    width: 94%;
   }
 }

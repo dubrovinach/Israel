@@ -4,6 +4,12 @@
   background-image: url("../../img/watercolor_Bg-about-program.png");
   background-repeat: no-repeat;
   background-position: top 160px center;
+  background-size: auto 604px;
+
+  @media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
+    background-image: url("../../img/watercolor_Bg-about-program-2x.png");
+  }
 }
 
 .about-program p {
@@ -14,4 +20,49 @@
   font-size: 17px;
   line-height: 28.9px;
   font-weight: 400;
+}
+
+.about-program h2 {
+  width: 32%;
+  margin: 0 auto;
+}
+
+@media (max-width: $tablet-width) {
+  .about-program {
+    padding-top: 0;
+  }
+
+  .about-program h2 {
+    width: 36%;
+  }
+
+  .about-program p {
+    width: 90%;
+    font-size: 16px;
+    line-height: 25.6px;
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-program {
+    padding-top: 45px;
+    padding-bottom: 76px;
+    background-image: url("../../img/watercolor_Bg-about-program-mobile.png");
+    background-position: top 245px center;
+    background-size: 320px auto;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/watercolor_Bg-about-program-mobile-2x.png");
+    }
+  }
+
+  .about-program h2 {
+    width: 100%;
+  }
+
+  .about-program p {
+    text-align: left;
+  }
 }

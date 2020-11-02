@@ -1,8 +1,8 @@
 .reviews {
   padding-bottom: 103px;
-  background-image: url("../../img/sketch-reviews.png");
+  background: url("../../img/sketch-reviews.png") top 56px right -3px,
+    url("../../img/watercolor_bg-reviews.png") right top 40px;
   background-repeat: no-repeat;
-  background-position: top 56px right -3px;
 }
 
 .reviews__photo {
@@ -26,8 +26,8 @@
 }
 
 .reviews__list h2 {
-  width: 30%;
-  padding-left: 85px;
+  width: 40%;
+  padding-left: 83px;
 }
 
 .reviews__list blockquote {
@@ -44,7 +44,7 @@
 }
 
 .reviews__program {
-  padding-top: 8px;
+  padding-top: 11px;
   padding-bottom: 15px;
   display: flex;
   flex-direction: row;
@@ -95,4 +95,106 @@
 
 .reviews__number {
   padding-right: 20px;
+}
+
+.reviews__social-networks ul {
+  width: 104px;
+}
+
+@media (max-width: $tablet-width) {
+  .reviews__container {
+    flex-direction: column;
+  }
+
+  .reviews {
+    background-position: top 450px right -3px;
+    position: relative;
+    padding-bottom: 72px;
+  }
+
+  .reviews__list {
+    width: 100%;
+    padding-left: 5%;
+  }
+
+  .reviews__list blockquote {
+    padding-top: 53px;
+    padding-bottom: 13px;
+    width: 94%;
+  }
+
+  .reviews__list h2 {
+    width: 160px;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .reviews__list a {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 10px;
+  }
+
+  .reviews__program {
+    padding-bottom: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .reviews__desc {
+    font-size: 16px;
+    line-height: 25.6px;
+  }
+
+  .reviews__img {
+    text-align: center;
+    margin: 0;
+    padding-top: 63px;
+  }
+
+  .reviews__img img {
+    width: 240px;
+    height: 320px;
+  }
+
+  .reviews__toggle {
+    position: absolute;
+    top: 393px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .reviews__wrapper {
+    padding-top: 22px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .reviews {
+    background: url("../../img/sketch-reviews-mobile.png") top 527px left 32px;
+    background-repeat: no-repeat;
+  }
+
+  .reviews__container {
+    background: url("../../img/watercolor_bg-reviews-mobile.png") top 730px left;
+    background-size: contain;
+
+    @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+      background-image: url("../../img/watercolor_bg-reviews-mobile-2x.png");
+    }
+  }
+
+  .reviews__list h2 {
+    width: 50%;
+  }
+
+  .reviews__program {
+    padding-bottom: 5px;
+  }
 }
