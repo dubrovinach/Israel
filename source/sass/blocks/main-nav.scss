@@ -2,6 +2,8 @@
   position: absolute;
   width: 100%;
   min-height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .main-nav__container {
