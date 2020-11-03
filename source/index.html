@@ -25,7 +25,10 @@
       <nav class="main-nav">
         <div class="container main-nav__container">
           <a href="#" class="main-nav__logo">
-            <img src="img/logo.png" width="137" height="48" alt="Логотип">
+            <!-- 1х: 137px; 2x: 274px -->
+            <img srcset="img/logo-2x.png 137w,
+            img/logo-2x.webp 137w,
+            img/masa-bw-2x.webp 137w" width="137" height="48" src="img/logo.png" alt="Логотип">
           </a>
           <ul class="main-nav__list main-nav__list--left">
             <li>
@@ -171,7 +174,10 @@
       </section>
       <section class="information">
         <div class="information__img">
-          <img src="img/how-to-trip-desktop.png" alt="Фото" width="581" height="507">
+          <!-- 1х: 581px; 2x: 1162px -->
+          <img srcset="img/how-to-trip-desktop-2x.png 581w,
+          img/how-to-trip-desktop.webp 581w,
+          img/how-to-trip-desktop-2x.webp 581w" width="581" height="507" src="img/how-to-trip-desktop.png" alt="Фото">
         </div>
         <div class="information__summary">
           <h2 class="global-h">Как поехать</h2>
@@ -210,13 +216,11 @@
             <ul>
               <li class="card__item card__item--excursions">
                 <a href="#">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="img/1img-desktop.webp 1x, img/1img-desktop-2x.webp 2x">
-                    <!-- 1х: 482px; 2x: 964px -->
-                    <img src="img/1img-desktop.png" srcset="img/1img-desktop-2x.png" alt="Экскурсии по Израилю"
-                      width="482" height="732">
-                  </picture>
+                  <!-- 1х: 482px; 2x: 964px -->
+                  <img srcset="img/1img-desktop-2x.png 137w,
+                  img/1img-desktop.webp 137w,
+                  img/1img-desktop-2x.webp 137w" width="482" height="732" src="img/1img-desktop.png"
+                    alt="Экскурсии по Израилю">
                   <p class="card__desc">Экскурсии по Израилю и&nbsp;знакомство с его историей</p>
                 </a>
               </li>
@@ -224,50 +228,42 @@
             <ul>
               <li class="card__item card__item--hebrew">
                 <a href="#">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="img/2img-desktop.webp 1x, img/2img-desktop-2x.webp 2x">
-                    <!-- 1х: 211px; 2x: 422px -->
-                    <img src="img/2img-desktop.png" srcset="img/2img-desktop-2x.png" alt="Экскурсии по Израилю"
-                      width="211" height="318">
-                  </picture>
+                  <!-- 1х: 211px; 2x: 422px -->
+                  <img srcset="img/2img-desktop-2x.png 137w,
+                    img/2img-desktop.webp 137w,
+                    img/2img-desktop-2x.webp 137w" width="211" height="318" src="img/2img-desktop.png"
+                    alt="Изучение иврита">
                   <p class="card__desc card__desc--hebrew">Изучение иврита</p>
                 </a>
               </li>
               <li class="card__item card__item--professions">
                 <a href="#">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="img/3img-desktop.webp 1x, img/3img-desktop-2x.webp 2x">
-                    <!-- 1х: 411px; 2x: 822px -->
-                    <img src="img/3img-desktop.png" srcset="img/3img-desktop-2x.png" alt="Экскурсии по Израилю"
-                      width="411" height="318">
-                  </picture>
+                  <!-- 1х: 411px; 2x: 822px -->
+                  <img srcset="img/3img-desktop-2x.png 137w,
+                  img/3img-desktop.webp 137w,
+                  img/3img-desktop-2x.webp 137w" width="411" height="318" src="img/3img-desktop.png"
+                    alt="Обучение современным навыкам и профессиям">
                   <p class="card__desc card__desc--professions">Обучение современным навыкам и профессиям</p>
                 </a>
               </li>
               <li class="card__item card__item--projects">
                 <a href="#">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="img/4img-desktop.webp 1x, img/4img-desktop-2x.webp 2x">
-                    <!-- 1х: 411px; 2x: 822px -->
-                    <img src="img/4img-desktop.png" srcset="img/4img-desktop-2x.png" alt="Экскурсии по Израилю"
-                      width="411" height="318">
-                  </picture>
+                  <!-- 1х: 411px; 2x: 822px -->
+                  <img srcset="img/4img-desktop-2x.png 137w,
+                  img/4img-desktop.webp 137w,
+                  img/4img-desktop-2x.webp 137w" width="411" height="318" src="img/4img-desktop.png"
+                    alt="Совместные творческие проекты">
                   <p class="card__desc card__desc--projects">Совместные творческие проекты с
                     израильской молодёжью</p>
                 </a>
               </li>
               <li class="card__item card__item--leadership">
                 <a href=" #">
-                  <picture>
-                    <source type="image/webp" media="(max-width: 1023px)"
-                      srcset="img/5img-desktop.webp 1x, img/5img-desktop-2x.webp 2x">
-                    <!-- 1х: 214px; 2x: 428px -->
-                    <img src="img/5img-desktop.png" srcset="img/5img-desktop-2x.png" alt="Экскурсии по Израилю"
-                      width="214" height="318">
-                  </picture>
+                  <!-- 1х: 214px; 2x: 428px -->
+                  <img srcset="img/5img-desktop-2x.png 214w,
+                  img/5img-desktop.webp 214w,
+                  img/5img-desktop-2x.webp 214w" width="214" height="318" src="img/5img-desktop.png"
+                    alt="Развитие лидерства">
                   <p class="card__desc card__desc--leadership">Развитие лидерства</p>
                 </a>
               </li>
@@ -378,13 +374,21 @@
           </ul>
         </div>
         <div class="questions__img">
-          <img src="img/img-questions-desktop.png" width="645" height="803" alt="Фото">
+          <!-- 1х: 645px; 2x: 1290px -->
+          <img srcset="img/img-questions-desktop-2x.png 645w,
+          img/img-questions-desktop.webp 645w,
+          img/img-questions-desktop-2x.webp 645w" width="645px" height="803px" src="img/img-questions-desktop.png"
+            alt="Фото">
         </div>
       </section>
       <section class="reviews">
         <div class="container reviews__container">
           <div class="reviews__img">
-            <img src="img/img_Testimonials-reviews-desktop.png" alt="Фото автора" width="364" height="380">
+            <!-- 1х: 364px; 2x: 728px -->
+            <img srcset="img/img_Testimonials-reviews-desktop-2x.png 364w,
+            img/img_Testimonials-reviews-desktop.webp 364w,
+            img/img_Testimonials-reviews-desktop-2x.webp 364w" width="364" height="380"
+              src="img/img_Testimonials-reviews-desktop.png" alt="Фото автора">
           </div>
           <div class="reviews__list">
             <h2 class="global-h">Отзывы</h2>
@@ -468,7 +472,10 @@
             </svg>
           </div>
           <div class="details__curator curator">
-            <img src="img/curator.jpg" alt="Аватар куратора" width="112" height="112">
+            <!-- 1х: 112px; 2x: 224px -->
+            <img srcset="img/curator-2x.jpg 112w,
+            img/curator.webp 112w,
+            img/curator-2x.webp 112w" width="112" height="112" src="img/curator.jpg" alt="Аватар куратора">
             <div class="curator__wrapper">
               <div class="curator__desc">
                 <span>Ваш куратор:</span>
@@ -528,7 +535,10 @@
     </main>
     <footer class="main-footer">
       <div class="container main-footer__container">
-        <img src="img/masa-bw.png" alt="Логотип" width="99" height="31">
+        <!-- 1х: 99px; 2x: 198px -->
+        <img srcset="img/masa-bw-2x.png 99w,
+        img/masa-bw.webp 99w,
+        img/masa-bw-2x.webp 99w" width="99" height="31" src="img/masa-bw.png" alt="Логотип">
         <p>Copyright someDesignCompany ©2019</p>
         <div class="main-footer__networks social-networks">
           <ul>
