@@ -427,7 +427,7 @@ html {
   width: 53%;
   padding-top: 12px; }
 
-.programs__description h3 {
+.programs__item h3 {
   margin: 0;
   width: 50%;
   font-family: "Montserrat";
@@ -437,7 +437,7 @@ html {
   color: #1fc0fc;
   padding-bottom: 24px; }
 
-.programs__description p {
+.programs__item p {
   margin: 0;
   font-size: 15px;
   font-weight: 400;
@@ -528,11 +528,11 @@ html {
   .programs__description {
     width: 100%;
     padding-left: 15px; }
-  .programs__description h3 {
+  .programs__item h3 {
     padding-bottom: 16px;
     font-size: 24px;
     line-height: 30px; }
-  .programs__description p {
+  .programs__item p {
     padding-bottom: 12px;
     font-size: 14px;
     line-height: 22.4px;
