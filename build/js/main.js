@@ -42,7 +42,7 @@
   let btnLeft = document.querySelector(".slider__button--left");
   let slides = document.querySelectorAll(".reviews__list blockquote");
 
-  let activeElement = 0;
+  let activeElement = 2;
 
   btnRight.addEventListener("click", function () {
     slides[activeElement].classList.add("visually-hidden");
