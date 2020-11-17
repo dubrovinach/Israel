@@ -91,6 +91,10 @@
       margin-top: 26px;
       padding: 0;
     }
+
+    &:nth-child(2) {
+      display: none;
+    }
   }
 
   .card__desc {

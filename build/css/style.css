@@ -995,6 +995,8 @@ html {
     .card ul:first-child {
       margin-top: 26px;
       padding: 0; }
+    .card ul:nth-child(2) {
+      display: none; }
   .card__desc {
     bottom: 27px;
     left: 29px; }
@@ -1577,9 +1579,7 @@ html {
           flex-direction: row; }
 
 .curator img {
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content; }
+  height: 112px; }
 
 .curator__desc {
   display: -webkit-box;
