@@ -91,9 +91,6 @@ html {
   border: 0;
   clip: rect(0 0 0 0); }
 
-.display-none {
-  display: none; }
-
 .main-nav {
   position: absolute;
   width: 100%;
@@ -430,7 +427,7 @@ html {
   width: 53%;
   padding-top: 12px; }
 
-.programs__item h3 {
+.programs__paragraph h3 {
   margin: 0;
   width: 50%;
   font-family: "Montserrat";
@@ -440,7 +437,7 @@ html {
   color: #1fc0fc;
   padding-bottom: 24px; }
 
-.programs__item p {
+.programs__paragraph p {
   margin: 0;
   font-size: 15px;
   font-weight: 400;
@@ -531,11 +528,11 @@ html {
   .programs__description {
     width: 100%;
     padding-left: 15px; }
-  .programs__item h3 {
+  .programs__paragraph h3 {
     padding-bottom: 16px;
     font-size: 24px;
     line-height: 30px; }
-  .programs__item p {
+  .programs__paragraph p {
     padding-bottom: 12px;
     font-size: 14px;
     line-height: 22.4px;
@@ -998,15 +995,13 @@ html {
     .card ul:first-child {
       margin-top: 26px;
       padding: 0; }
+    .card ul:nth-child(2) {
+      display: none; }
   .card__desc {
     bottom: 27px;
     left: 29px; }
   .card__item {
-    padding-bottom: 0; }
-  .card__second-list li {
-    display: none; }
-  .card__second-list li:first-child {
-    display: block; } }
+    padding-bottom: 0; } }
 
 @media (max-width: 767px) {
   .card img {
@@ -1582,6 +1577,11 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row; }
+
+.curator img {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content; }
 
 .curator__desc {
   display: -webkit-box;
