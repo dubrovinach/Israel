@@ -358,9 +358,9 @@
     <header>
       <nav class="main-nav">
         <div class="container main-nav__container">
-          <a href="#" class="main-nav__logo">
+          <a href="" class="main-nav__logo">
             <!-- 1х: 137px; 2x: 274px -->
-            <img srcset="img/logo-2x.png 137w,
+            <img srcset="img/logo-2x.png,
             img/logo-2x.webp 137w,
             img/masa-bw-2x.webp 137w" width="137" height="48" src="img/logo.png" alt="Логотип">
           </a>
@@ -410,7 +410,7 @@
           <h2 class="global-h">программы</h2>
           <div class="programs__wrapper">
             <ul>
-              <li>
+              <li class="programs__item">
                 <a href="#" class="programs__link programs__link--general" data-tab="0">
                   <svg width="36" height="36">
                     <use xlink:href="#culture"></use>
@@ -420,13 +420,13 @@
               </li>
               <li class="programs__item programs__item--active">
                 <a href="#" class="programs__link programs__link--active" data-tab="1">
-                  <svg class="programs__svg--study" width="36" height="36">
+                  <svg class="programs__svg programs__svg--study" width="36" height="36">
                     <use xlink:href="#study"></use>
                   </svg>
                   <span class="programs__mini-header">Академические</span>
                 </a>
               </li>
-              <li>
+              <li class="programs__item">
                 <a href="#" class="programs__link" data-tab="2">
                   <svg width="36" height="36">
                     <use xlink:href="#business"></use>
@@ -434,7 +434,7 @@
                   <span class="programs__mini-header">Стажировки</span>
                 </a>
               </li>
-              <li>
+              <li class="programs__item">
                 <a href="#" class="programs__link" data-tab="3">
                   <svg width="36" height="36">
                     <use xlink:href="#volonteur"></use>
@@ -442,7 +442,7 @@
                   <span class="programs__mini-header">Волонтёрство</span>
                 </a>
               </li>
-              <li>
+              <li class="programs__item">
                 <a href="#" class="programs__link" data-tab="4">
                   <svg width="36" height="36">
                     <use xlink:href="#religion"></use>
@@ -453,7 +453,7 @@
             </ul>
             <div class="programs__description">
               <div class="programs__paragraph visually-hidden">
-                <h3>Общие</h3>
+                <h3 class="global-h">Общие</h3>
                 <p>Провести семестр или год за рубежом, знакомясь с различными культурами и
                   идеями, традициями и стилем жизни — вот что такое учеба за границей! Израиль — это не только центр
                   религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования.
@@ -463,7 +463,7 @@
                   Здесь, в Израиле, Вы сможете&nbsp;изучить все это в удивительной университетской среде.</p>
               </div>
               <div class="programs__paragraph">
-                <h3>Академические</h3>
+                <h3 class="global-h">Академические</h3>
                 <p>Провести семестр или год за рубежом, знакомясь с различными культурами и&nbsp;идеями, традициями и
                   стилем жизни — вот что такое учеба за границей! Израиль — это не только центр
                   религиозного мира, это также академический центр, живая лаборатория идей и творческого исследования.
@@ -473,7 +473,7 @@
                   Здесь, в Израиле, Вы сможете&nbsp;изучить все это в&nbsp;удивительной университетской среде.</p>
               </div>
               <div class="programs__paragraph visually-hidden">
-                <h3>Стажировки</h3>
+                <h3 class="global-h">Стажировки</h3>
                 <p>Провести семестр или год за рубежом, знакомясь с различными культурами
                   и&nbsp;идеями, традициями и
                   стилем жизни — вот что такое учеба за границей! Израиль — это не только центр
@@ -485,7 +485,7 @@
                   Здесь, в Израиле, Вы сможете&nbsp;изучить все это в&nbsp;удивительной университетской среде.</p>
               </div>
               <div class="programs__paragraph visually-hidden">
-                <h3>Волонтёрство</h3>
+                <h3 class="global-h">Волонтёрство</h3>
                 <p>Провести семестр или год за рубежом, знакомясь с различными культурами
                   и&nbsp;идеями, традициями и
                   стилем жизни — вот что такое учеба за границей! Израиль — это не только центр
@@ -497,7 +497,7 @@
                   Здесь, в Израиле, Вы сможете&nbsp;изучить все это в&nbsp;удивительной университетской среде.</p>
               </div>
               <div class="programs__paragraph visually-hidden">
-                <h3>Религиозные</h3>
+                <h3 class="global-h">Религиозные</h3>
                 <p>Провести семестр или год за рубежом, знакомясь с различными культурами
                   и&nbsp;идеями, традициями и
                   стилем жизни — вот что такое учеба за границей! Израиль — это не только центр
@@ -537,19 +537,19 @@
           </p>
           <h3>Чтобы иметь возможность получить грант на обучение от 4200 до 8400$, вы должны:</h3>
           <ul class="information__list">
-            <li>
+            <li class="information__item">
               <span>1</span>
               <p>Быть в возрасте от 16 до 30 лет</p>
             </li>
-            <li>
+            <li class="information__item information__item--education">
               <span>2</span>
               <p>Иметь оконченное среднее образование</p>
             </li>
-            <li>
+            <li class="information__item information__item--check">
               <span>3</span>
               <p>Иметь документально подтверждённые еврейские корни и&nbsp;пройти консульскую проверку</p>
             </li>
-            <li>
+            <li class="information__item">
               <span>4</span>
               <p>За последние 2 года быть не больше 3х месяцев подряд непрерывно в Израиле.</p>
             </li>
@@ -564,18 +564,19 @@
           <p class="life-in-Israel__desc">Помимо учёбы, в рамках программе у вас будет возможность путешествовать по
             стране и познакомиться с богатой культурно-исторической жизнью Израиля и его жителей.</p>
           <div class="life-in-Israel__photos card">
-            <ul>
+            <!-- <ul class="card__first-list">
               <li class="card__item card__item--excursions">
                 <a href="#">
                   <!-- 1х: 482px; 2x: 964px -->
-                  <img srcset="img/1img-desktop-2x.png 137w,
+            <!-- <img srcset="img/1img-desktop-2x.png 137w,
                   img/1img-desktop.webp 137w,
-                  img/1img-desktop-2x.webp 137w" width="482" height="732" src="img/1img-desktop.png" alt="Экскурсии по Израилю">
-                  <p class="card__desc">Экскурсии по Израилю и&nbsp;знакомство с его историей</p>
-                </a>
-              </li>
-            </ul>
-            <ul>
+                  img/1img-desktop-2x.webp 137w" width="482" height="732" src="img/1img-desktop.png"
+              alt="Экскурсии по Израилю">
+            <p class="card__desc">Экскурсии по Израилю и&nbsp;знакомство с его историей</p>
+            </a>
+            </li>
+            </ul> -->
+            <ul class="card__second-list">
               <li class="card__item card__item--hebrew">
                 <a href="#">
                   <!-- 1х: 211px; 2x: 422px -->
@@ -585,7 +586,7 @@
                   <p class="card__desc card__desc--hebrew">Изучение иврита</p>
                 </a>
               </li>
-              <li class="card__item card__item--professions">
+              <li class="card__item card__item--professions display-slider-none">
                 <a href="#">
                   <!-- 1х: 411px; 2x: 822px -->
                   <img srcset="img/3img-desktop-2x.png 137w,
@@ -594,7 +595,7 @@
                   <p class="card__desc card__desc--professions">Обучение современным навыкам и профессиям</p>
                 </a>
               </li>
-              <li class="card__item card__item--projects">
+              <li class="card__item card__item--projects display-slider-none">
                 <a href="#">
                   <!-- 1х: 411px; 2x: 822px -->
                   <img srcset="img/4img-desktop-2x.png 137w,
@@ -604,7 +605,7 @@
                     израильской молодёжью</p>
                 </a>
               </li>
-              <li class="card__item card__item--leadership">
+              <li class="card__item card__item--leadership display-slider-none">
                 <a href=" #">
                   <!-- 1х: 214px; 2x: 428px -->
                   <img srcset="img/5img-desktop-2x.png 214w,
@@ -615,12 +616,12 @@
               </li>
             </ul>
           </div>
-          <div class="life-in-Israel__toggle slider">
-            <button class="slider__toggle slider__toggle--active" type="button" title="1"></button>
-            <button class="slider__toggle" type="button" title="2"></button>
-            <button class="slider__toggle" type="button" title="3"></button>
-            <button class="slider__toggle" type="button" title="4"></button>
-            <button class="slider__toggle" type="button" title="5"></button>
+          <div class="life-in-Israel__toggle slider" id="card-slider">
+            <button class="slider__toggle slider__toggle--active" type="button" title="1" data-slider-button="1"></button>
+            <button class="slider__toggle" type="button" title="2" data-slider-button="2"></button>
+            <button class="slider__toggle" type="button" title="3" data-slider-button="3"></button>
+            <button class="slider__toggle" type="button" title="4" data-slider-button="4"></button>
+            <button class="slider__toggle" type="button" title="5" data-slider-button="5"></button>
           </div>
         </div>
       </section>
@@ -736,8 +737,8 @@
           </div>
           <div class="reviews__list">
             <h2 class="global-h">Отзывы</h2>
-            <blockquote>
-              <cite>Ольга Михайлова</cite>
+            <blockquote class="visually-hidden">
+              <cite>Илья Волков</cite>
               <div class="reviews__program">
                 <span>Программа:</span>
                 <p>Арт-Тель, февраль-сетнябрь 2017</p>
@@ -768,8 +769,8 @@
                 а
                 еще и поездки всей программой в разные уголки страны. </p>
             </blockquote>
-            <blockquote class="visually-hidden">
-              <cite>Илья Волков</cite>
+            <blockquote>
+              <cite>Ольга Михайлова</cite>
               <div class="reviews__program">
                 <span>Программа:</span>
                 <p>Арт-Тель, февраль-сетнябрь 2017</p>
@@ -856,21 +857,21 @@
               <div class="reviews__social-networks social-networks">
                 <ul>
                   <li>
-                    <a href="">
+                    <a href="#">
                       <svg width="24" height="24">
                         <use xlink:href="#fb"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="">
+                    <a href="#">
                       <svg width="24" height="24">
                         <use xlink:href="#tw"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="">
+                    <a href="#">
                       <svg width="19" height="19">
                         <use xlink:href="#instagram"></use>
                       </svg>
@@ -909,21 +910,21 @@
               <div class="details__social-networks social-networks">
                 <ul>
                   <li>
-                    <a href="">
+                    <a href="#">
                       <svg width="24" height="24">
                         <use xlink:href="#fb"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="">
+                    <a href="#">
                       <svg width="20" height="20">
                         <use xlink:href="#whatsapp"></use>
                       </svg>
                     </a>
                   </li>
                   <li>
-                    <a href="">
+                    <a href="#">
                       <svg width="22" height="28">
                         <use xlink:href="#telegram"></use>
                       </svg>
