@@ -73,9 +73,6 @@
   // переключатель блока частые вопросы
 
   let questions = document.querySelector(".questions__wrapper ul");
-  let questionsDescriptions = document.querySelector(
-    ".questions__wrapper ul li p"
-  );
 
   function openDescription(evt) {
     evt.preventDefault();
@@ -94,4 +91,6 @@
   }
 
   questions.addEventListener("click", openDescription);
-})();
+
+
+});

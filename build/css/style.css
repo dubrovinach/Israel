@@ -427,7 +427,7 @@ html {
   width: 53%;
   padding-top: 12px; }
 
-.programs__item h3 {
+.programs__paragraph h3 {
   margin: 0;
   width: 50%;
   font-family: "Montserrat";
@@ -437,7 +437,7 @@ html {
   color: #1fc0fc;
   padding-bottom: 24px; }
 
-.programs__item p {
+.programs__paragraph p {
   margin: 0;
   font-size: 15px;
   font-weight: 400;
@@ -528,11 +528,11 @@ html {
   .programs__description {
     width: 100%;
     padding-left: 15px; }
-  .programs__item h3 {
+  .programs__paragraph h3 {
     padding-bottom: 16px;
     font-size: 24px;
     line-height: 30px; }
-  .programs__item p {
+  .programs__paragraph p {
     padding-bottom: 12px;
     font-size: 14px;
     line-height: 22.4px;
@@ -766,7 +766,7 @@ html {
   margin: 0;
   list-style: none; }
 
-.information__list li {
+.information__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -779,7 +779,7 @@ html {
           align-items: center;
   position: relative;
   padding-bottom: 55px; }
-  .information__list li::before {
+  .information__item::before {
     content: "";
     position: absolute;
     left: -14px;
@@ -790,21 +790,21 @@ html {
     -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
     background-color: #ffffff; }
-  .information__list li:nth-child(2) {
+  .information__item--education {
     padding-bottom: 45px; }
-  .information__list li:nth-child(3) {
+  .information__item--check {
     padding-bottom: 39px; }
-  .information__list li:last-child {
+  .information__item:last-child {
     padding-bottom: 0; }
 
-.information__list li p {
+.information__item p {
   margin: 0;
   width: 62%;
   font-size: 15px;
   font-weight: 400;
   line-height: 21px; }
 
-.information__list li span {
+.information__item span {
   color: #ffc341;
   padding-right: 37px;
   z-index: 1; }
@@ -832,19 +832,19 @@ html {
   .information__list {
     padding-left: 8px;
     background-position: left 10px top 0; }
-  .information__list li {
+  .information__item {
     padding-bottom: 59px; }
-    .information__list li:nth-child(2) {
+    .information__item--education {
       padding-bottom: 59px; }
-    .information__list li:nth-child(3) {
+    .information__item--check {
       padding-bottom: 59px; }
-    .information__list li::before {
+    .information__item::before {
       left: -15px; }
-  .information__list li p {
+  .information__item p {
     font-size: 14px;
     line-height: 22.4px;
     width: 83%; }
-  .information__list li span {
+  .information__item span {
     padding-right: 30px; }
   .information__note {
     width: 95%;
@@ -859,9 +859,9 @@ html {
     padding-top: 50px; }
   .information__summary h2 {
     width: 100%; }
-  .information__list li:nth-child(2) {
+  .information__item--education {
     padding-bottom: 36px; }
-  .information__list li:nth-child(3) {
+  .information__item--check {
     padding-bottom: 25px; } }
 
 .life-in-Israel {
@@ -941,13 +941,6 @@ html {
       flex-shrink: 0;
   margin-top: -21px; }
 
-.card ul li {
-  position: relative;
-  padding-bottom: 25px;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content; }
-
 .card ul li p {
   margin: 0;
   padding: 0;
@@ -973,17 +966,20 @@ html {
   .card__desc--leadership {
     left: 24px; }
 
-.card__item--hebrew {
-  width: 32%; }
-
-.card__item--professions {
-  width: 64%; }
-
-.card__item--projects {
-  width: 63%; }
-
-.card__item--leadership {
-  width: 33%; }
+.card__item {
+  position: relative;
+  padding-bottom: 25px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content; }
+  .card__item--hebrew {
+    width: 32%; }
+  .card__item--professions {
+    width: 64%; }
+  .card__item--projects {
+    width: 63%; }
+  .card__item--leadership {
+    width: 33%; }
 
 @media (max-width: 1023px) {
   .card ul {
@@ -999,13 +995,11 @@ html {
     .card ul:first-child {
       margin-top: 26px;
       padding: 0; }
-    .card ul:nth-child(2) {
-      display: none; }
-  .card ul li {
-    padding-bottom: 0; }
   .card__desc {
     bottom: 27px;
-    left: 29px; } }
+    left: 29px; }
+  .card__item {
+    padding-bottom: 0; } }
 
 @media (max-width: 767px) {
   .card img {
